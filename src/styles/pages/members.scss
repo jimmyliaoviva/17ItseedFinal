@@ -1,0 +1,11 @@
+// 如果要修改sidebar 跟 header 的樣式，請將sidebar.scss 的內容複製過來再修改
+// 修改完之後可以將import刪掉
+// 注意！預設的樣式是以底圖為深色去做的，所以sidebar 皆為淺色。
+@import url(../sidebar.scss);
+@import "~bootstrap/scss/bootstrap";
+
+// 這是為了讓大家可以看到sidebar的顏色才將底色設為黑色
+// 可以自行調整
+body {
+    background-color:black ;
+}
