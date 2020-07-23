@@ -1862,7 +1862,7 @@
 		@media screen and (max-width: 480px) {
 
 			.box {
-				padding: 1em;
+				padding: 3em 1em;
 			}
 
 		}
@@ -4434,5 +4434,6 @@
 		}
 		// content
 		.content p {
+			margin: 0 0 1em 0;
 
 		}

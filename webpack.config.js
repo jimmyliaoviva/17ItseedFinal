@@ -32,6 +32,10 @@ module.exports = {
             './src/scripts/pages/project_tuv.js',
             './src/styles/pages/project_tuv.scss'
         ],
+        errorPage: [
+            './src/scripts/pages/errorPage.js',
+            './src/styles/pages/errorPage.scss'
+        ],
     },
     // entry:entries,
     // output: {
@@ -68,6 +72,11 @@ module.exports = {
             template: './src/project_tuv.html',
             filename: 'project_tuv.html',
             chunks: ['project_tuv']
+        }),
+        new HtmlWebpackPlugin({
+            template: './src/errorPage.html',
+            filename: 'errorPage.html',
+            chunks: ['errorPage']
         }),
     ],
     // plugins: html,
