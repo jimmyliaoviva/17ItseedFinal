@@ -10,6 +10,11 @@
 body {
     background-color: #142f6d;
     color: #143983;
+    background-image:url( '../../images/background.png' );
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: 25% 50%;
+    background-size: cover;
     .content {
         padding: 60px 2em 2em 2em;
         font-size: 30px;
@@ -19,7 +24,13 @@ body {
     .row h1 {
         margin-top: 1em;
         margin-bottom: 1em;
-        color: white;
+        color: black;
+    }
+}
+@media screen and(max-width:576px ){
+    body {
+        background-image: url('../../images/mobile_back.png');
+        background-position:30% 50%;
     }
 }
 /* title */
@@ -69,6 +80,7 @@ body {
 
 @media screen and(max-width:576px) {
     .right_half {
+        visibility: hidden;
         position: fixed;
         z-index: -1;
         img {
