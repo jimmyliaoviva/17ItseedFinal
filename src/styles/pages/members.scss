@@ -1533,17 +1533,45 @@ body {
 
         }
         // Modal
-        .modal .modal-body {
+		.modal {
+				
+		} 
+		 .modal-header {
+			border-bottom: 0;
+		}
+		
+		.modal-body {
 			text-align: center;
 			p {
 				width: 100%;
 			}
 			.hashtag {
-				background-color: #EFE271;
-				height: 3em;
+				border: 2px solid #C4C4C4;
+				box-sizing: border-box;
+				border-radius: 21px;
+				text-align: center;
+				display: flex;
+				justify-content: space-around;
+				padding: 10% 0;
 				.badge {
-					background-color: white;
-					height: 1em;
+					display: block;
+					background-color:  #EFE271;;
+					height: 1.5em;
+					text-align: center;
 				}
 			}
-        }
+
+			.future {
+				border: 2px solid #C4C4C4;
+				box-sizing: border-box;
+				border-radius: 21px;
+				padding: 10% 3%;
+				p {
+					margin: 0;
+				}
+			}
+		}
+		/* background 1 */
+
+
+		
