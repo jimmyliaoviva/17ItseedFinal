@@ -1533,11 +1533,63 @@ body {
 
         }
         // Modal
-		.modal {
-				
+		.modal-content {
+			background-image: url(../../images/recruit/background.jpg);	
+			background-position: center;
+            background-size: cover;
 		} 
 		 .modal-header {
 			border-bottom: 0;
+			overflow: hidden;
+		}
+
+		.cut {
+			width: 80px;
+			overflow: hidden;
+			&.purpleCut {
+				position: absolute;
+				left: 0;
+				top: 0;
+			}
+			&.redCut {
+				position: absolute;
+				right: 0;
+				top: 0;
+			}
+			&.blueCut {
+				position:absolute;
+				left: 0;
+				bottom: 0;
+				margin: 0;
+			}
+			&.yellowCut {
+				position: absolute;
+				right: 0;
+				bottom: 0;
+				margin: 0;
+			}
+		}
+		.seeds {
+			position: relative;
+			width: 100px;
+			&.purple_seed {
+				transform: rotate(123.18deg);
+				left: -20px;
+				top:-10px;
+			}
+			&.red_seed {
+				transform: rotate(-129.27deg);
+				right:-7px;
+				top: -10px;
+			}
+			&.blue_seed {
+				left: -23px;
+				bottom: -23px;
+			}
+			&.yellow_seed {
+				right: 0;
+				bottom: -20px;
+			}
 		}
 		
 		.modal-body {
@@ -1568,6 +1620,18 @@ body {
 				padding: 10% 3%;
 				p {
 					margin: 0;
+				}
+			}
+		}
+		
+		.modal-footer {
+			border-top: 0;
+			.links {
+				height: 20px;
+				width: 100%;
+				text-align: center;
+				img {
+					width: 20px;
 				}
 			}
 		}
