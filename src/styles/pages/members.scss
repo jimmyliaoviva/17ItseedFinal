@@ -1580,22 +1580,47 @@ body {
 			&.red_seed {
 				transform: rotate(-129.27deg);
 				right:-7px;
-				top: -10px;
+				top: -12px;
 			}
 			&.blue_seed {
 				left: -23px;
-				bottom: -23px;
+				bottom: -25px;
 			}
 			&.yellow_seed {
 				right: 0;
-				bottom: -20px;
+				bottom: -24px;
 			}
 		}
 		
 		.modal-body {
 			text-align: center;
+			.circleCut {
+				border-radius: 999em;
+				width: 94px;
+				height: 94px;
+				overflow: hidden;
+				margin: auto;
+				img {
+					width: 94px;
+				}
+			}
 			p {
 				width: 100%;
+			}
+			.bold {
+				font-weight: 900;
+			}
+			.name {
+				margin-top: 2em;
+			}
+			.itseedBaby {
+				font: inherit;
+				font-size: 100%;
+				width: 2em;
+				vertical-align: text-bottom;
+			}
+			.futureTitle {
+				margin-top: 2em;
 			}
 			.hashtag {
 				border: 2px solid #C4C4C4;
@@ -1610,6 +1635,8 @@ body {
 					background-color:  #EFE271;;
 					height: 1.5em;
 					text-align: center;
+					font-size: 100%;
+					border-radius: 10px;
 				}
 			}
 
