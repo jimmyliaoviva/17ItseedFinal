@@ -84,23 +84,28 @@
                                     </div>
                                     <% } %>
                                     <% if (item.learned) { %>
-                                    <div class="row">
-                                        <p class="futureTitle bold"><img class="itseedBaby"
-                                                src="./images/members/itseedBaby.png" alt="">資種學習收穫<img
-                                                class="itseedBaby" src="./images/members/itseedBaby.png" alt="">
-                                        </p>
-                                    </div>
-                                    <div class="row future">
-                                        <p><%= item.learned %></p>
-                                    </div>
-                                    <% } %>
+                                        <div class="row">
+                                            <p class="futureTitle bold"><img class="itseedBaby"
+                                                    src="./images/members/itseedBaby.png" alt="">資種學習收穫<img
+                                                    class="itseedBaby" src="./images/members/itseedBaby.png" alt="">
+                                            </p>
+                                        </div>
+                                        <div class="row future">
+                                            <p><%= item.learned %></p>
+                                        </div>
+                                        <% } %>
                                 </div>
                             </div>
                             <div class="modal-footer">
                                 <div class="links">
                                     <img src="./images/members/medium.png" alt="">
-                                    <img src="./images/members/facebook.png" alt="">
-                                    <img src="./images/members/gmail.png" alt="">
+                                    <% if (item.facebook) { %>
+                                    <a href="<%= item.facebook %>"><img src="./images/members/facebook.png" alt=""></a>
+                                    <%  } %>
+                                    <% if (item.email) { %>
+                                    <a href="mailto:<%=item.email %>"><img src="./images/members/gmail.png" alt=""></a>
+                                    <%  } %>
+
                                 </div>
                                 <div class="blueCut cut">
                                     <img class="blue_seed seeds" src="./images/members/2.png" alt="">
@@ -118,24 +123,7 @@
         </div>
     </div>
 
-
-
-    <div class="modal-footer">
-        <div class="links">
-            <img src="./images/members/medium.png" alt="">
-            <img src="./images/members/facebook.png" alt="">
-            <img src="./images/members/gmail.png" alt="">
-        </div>
-        <div class="blueCut cut">
-            <img class="blue_seed seeds" src="./images/members/2.png" alt="">
-        </div>
-        <div class="yellowCut cut">
-            <img class="yellow_seed seeds" src="./images/members/4.png" alt="">
-        </div>
-    </div>
-    </div>
-    </div>
-    </div>
+ 
 
     <!-- Scripts -->
     <script src="./js/packages/jquery.min.js"></script>
