@@ -7,7 +7,8 @@
 // 這是為了讓大家可以看到sidebar的顏色才將底色設為黑色
 // 可以自行調整
 body {
-    background-color: red;
+    background-color: #f8f8ec;
+    color: #006E39;
 }
 
 /* 左邊內容 */
@@ -18,10 +19,33 @@ body {
         margin: 0;
         padding: 0;
         height: 100%;
+        .title {
+            margin-left: 10px;
+            font-weight: 900;
+            font-size: 3.5em;
+            margin-bottom:0.5em;
+        }
+        .subtitle {
+            width: 100%;
+            font-size: 1.5em;
+            font-weight: 600;
+            &.one {
+                // text-align: left;
+                margin-left: 1em;
+            }
+            &.two {
+                // text-align: right;
+                margin-left: 2em;
+            }
+        }
+        .phonePoster {
+            display: none;
+        }
     }
     .left {
         background-color: #f8f8ec;
         height: 100%;
+        // padding: 5% 5%;
     }
     .right {
         width: 100%;
@@ -36,23 +60,46 @@ body {
     .buttonWrap {
         position: absolute;
         bottom: 0px;
-        // background-color: blue;
-        // height: 60px;
-        // width: 90%;
         &.row {
             width: 100%;
         }
         .buttonSpacing {
-            padding: 10px 10px 10px 10px;
-            // height: 60px;
-            // background-color: yellow;
+            padding: 20px 20px 20px 20px;
             text-align: center;
             .button {
+                cursor: pointer;
                 padding: 10px 10px 10px 10px;
                 border-radius: 10px;
                 background: #ffffff 0% 0% no-repeat padding-box;
                 box-shadow: 3px 3px 6px #00000029;
             }
         }
+    }
+}
+
+@media screen and (max-width:567px) {
+    // body {
+    //     width: 100%;
+    // }
+    .content {
+        // width:100%;
+        // height: 60vh;
+        .whole {
+            // width: 100%;
+            .phonePoster{
+                display: block;
+                width: 100vw;
+            }
+            .left {
+                padding: 0;
+            }
+            .buttonWrap {
+                position: relative;
+                background-color: rgb(127, 191, 111);;
+            }
+        }
+    }
+    .right {
+        display: none;
     }
 }
