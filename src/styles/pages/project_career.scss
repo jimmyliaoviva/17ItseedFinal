@@ -3,16 +3,15 @@
 // 注意！預設的樣式是以底圖為深色去做的，所以sidebar 皆為淺色。
 @import url(../sidebar.scss);
 @import "~bootstrap/scss/bootstrap";
-
 // 這是為了讓大家可以看到sidebar的顏色才將底色設為黑色
 // 可以自行調整
 body {
     background-color: #f8f8ec;
-    color: #006E39;
+    color: #006e39;
 }
 
 /* 左邊內容 */
-.content {
+.main {
     padding-top: 80px;
     height: 100vh;
     .whole {
@@ -20,13 +19,14 @@ body {
         padding: 0;
         height: 100%;
         .title {
+            
             margin-left: 10px;
             font-weight: 900;
             font-size: 3.5em;
-            margin-bottom:0.5em;
+            margin-bottom: 0.5em;
         }
         .subtitle {
-            width: 100%;
+            // width: 100%;
             font-size: 1.5em;
             font-weight: 600;
             &.one {
@@ -44,7 +44,7 @@ body {
     }
     .left {
         background-color: #f8f8ec;
-        height: 100%;
+        // height: 100%;
         // padding: 5% 5%;
     }
     .right {
@@ -77,16 +77,16 @@ body {
     }
 }
 
-@media screen and (max-width:567px) {
+@media screen and (max-width: 567px) {
     // body {
     //     width: 100%;
     // }
-    .content {
+    .main {
         // width:100%;
         // height: 60vh;
         .whole {
             // width: 100%;
-            .phonePoster{
+            .phonePoster {
                 display: block;
                 width: 100vw;
             }
@@ -95,7 +95,8 @@ body {
             }
             .buttonWrap {
                 position: relative;
-                background-color: rgb(127, 191, 111);;
+                background-color: rgb(127, 191, 111);
+                margin: 0;
             }
         }
     }
@@ -103,3 +104,135 @@ body {
         display: none;
     }
 }
+
+/* 共學 */
+.learned {
+    .modal-header {
+        background-color: #f8f8ec;
+        color: #006e39;
+        display: block;
+        .modal-title {
+            font-size: 3em;
+            width: 100%;
+        }
+        .subtitle {
+            text-align: right;
+        }
+    }
+    .modal-body {
+        padding: 20px 15px 20px 15px;
+        background-color: #7fbf6f;
+        color: #034c28;
+        .content {
+            background-color: #f8f8ec;
+            opacity: 0.837;
+            border-radius: 1.5em;
+            padding: 11px;
+            margin-bottom: 1rem;
+            p {
+                margin: 0;
+                color: #006e39;
+                font-weight: 400;
+            }
+        }
+        .title {
+            font-size: 2em;
+            font-weight: 600;
+            margin-left: 1em;
+        }
+        .learnedBtn {
+            text-align: center;
+            border-radius: 999em;
+            background-color: #f4e347;
+            width: 100%;
+            border: none;
+            box-shadow: 0 0 10px 0 #b2a635;
+            color: #034c28;
+            vertical-align: middle;
+            padding: 0.3em 0;
+            p {
+                margin: 0;
+            }
+        }
+    }
+}
+/* 心得撰寫 */
+.presentation {
+    .modal-header {
+        background-color: #f8f8ec;
+        color: #006e39;
+        display: block;
+        border-bottom: none;
+        .modal-title {
+            font-size: 3em;
+            width: 100%;
+        }
+        .subtitle {
+            text-align: right;
+            margin: 0;
+        }
+    }
+    .poster {
+        position: relative;
+        top: 0;
+        left: 0;
+        width: 100%;
+    }
+    .modal-body {
+        padding: 20px 15px 20px 15px;
+        background-color: #7fbf6f;
+        color: #034c28;
+
+        .content {
+            background-color: #f8f8ec;
+            opacity: 0.837;
+            border-radius: 1.5em;
+            padding: 11px;
+            margin-bottom: 1rem;
+            p {
+                margin: 0;
+                color: #006e39;
+                font-weight: 400;
+            }
+            img {
+                width: 100%;
+            }
+            &.photoContent {
+                background-color: #f8f8ec;
+                opacity: 1;
+                border-radius: 1.5em;
+                padding: 0;
+                overflow: hidden;
+            }
+        }
+
+        .title {
+            font-size: 2em;
+            font-weight: 600;
+            margin-left: 1em;
+        }
+        .presentationBtn {
+            text-align: center;
+            border-radius: 999em;
+            background-color: #f4e347;
+            width: 100%;
+            border: none;
+            box-shadow: 0 0 10px 0 #b2a635;
+            color: #034c28;
+            vertical-align: middle;
+            padding: 0.3em 0;
+            p {
+                margin: 0;
+            }
+        }
+    }
+}
+@media screen and(max-width:576px) {
+    .presentation {
+        .modal-body {
+            .content {
+                font-size: 0.9em;
+            }
+        }
+    }
+} 

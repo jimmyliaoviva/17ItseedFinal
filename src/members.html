@@ -99,8 +99,13 @@
                             <div class="modal-footer">
                                 <div class="links">
                                     <img src="./images/members/medium.png" alt="">
-                                    <img src="./images/members/facebook.png" alt="">
-                                    <img src="./images/members/gmail.png" alt="">
+                                    <% if (item.facebook) { %>
+                                    <a href="<%= item.facebook %>"><img src="./images/members/facebook.png" alt=""></a>
+                                    <%  } %>
+                                    <% if (item.email) { %>
+                                    <a href="mailto:<%=item.email %>"><img src="./images/members/gmail.png" alt=""></a>
+                                    <%  } %>
+
                                 </div>
                                 <div class="blueCut cut">
                                     <img class="blue_seed seeds" src="./images/members/2.png" alt="">
