@@ -139,7 +139,6 @@ body {
                 width: 56px;
             }
         }
-
     }
 
     .left {
@@ -211,23 +210,27 @@ body {
         text-align: center;
         display: flex;
         justify-content: space-around;
-        color: #605D5E;
+        color: #605d5e;
         .leave {
             position: relative;
             background: #efefef 0% 0% no-repeat padding-box;
             border-radius: 15px;
-            padding:1em;
+            padding: 1em;
             p {
                 margin: 0;
             }
-            
         }
     }
 }
 
 @media screen and(max-width:576px) {
     .modal {
-        .title {
+        .modal-body {
+            .container {
+                .title {
+                    font-size: 24px;
+                }
+            }
         }
     }
 }
