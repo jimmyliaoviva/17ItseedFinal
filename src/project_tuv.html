@@ -6,25 +6,341 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
-<!-- Header -->
-<header id="header">
-    <div class="logo"><a href="index.html">Road Trip <span></span></a></div>
-    <a href="#menu"><span>Menu</span></a>
-</header>
-
-<!-- Nav -->
-<nav id="menu">
-    <ul class="links">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="project_tuv.html">TUV</a></li>
-        <li><a href="project_tb.html">TB</a></li>
-        <li><a href="project_career.html">職涯專案</a></li>
-        <li><a href="project_recruit.html">招生專案</a></li>
-        <li><a href="members.html">資種 17 </a></li>
-    </ul>
-</nav>
 
 <body>
+    <!-- Header -->
+    <header id="header">
+        <div class="logo"><a href="index.html">Road Trip <span></span></a></div>
+        <a href="#menu"><span>Menu</span></a>
+    </header>
+
+    <!-- Nav -->
+    <nav id="menu">
+        <ul class="links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="project_tuv.html">TUV</a></li>
+            <li><a href="project_tb.html">TB</a></li>
+            <li><a href="project_career.html">職涯專案</a></li>
+            <li><a href="project_recruit.html">招生專案</a></li>
+            <li><a href="members.html">資種 17 </a></li>
+        </ul>
+    </nav>
+
+
+
+
+    <section class="section-tuv">
+
+
+        <div style="display: none;" class="sub-nav sub-nav-introduction">
+            <ul>
+                <li><a class="sub-nav-link" href="/aboutITSeed">計畫簡介</a></li>
+                <!-- <li><a  class="sub-nav-link" href="/aboutNTCA">公會簡介</a></li> -->
+                <li><a class="sub-nav-link" href="/memberList">歷屆名單</a></li>
+                <li><a class="sub-nav-link " href="/studentIntro">組織架構</a></li>
+            </ul>
+        </div>
+
+        <div style="display: none;" class="sub-nav dobule-sub-nav sub-nav-studentIntro">
+            <ul class="link-nav">
+                <li><a class="sub-nav-link dont-be-selected" href="/aboutITSeed">計畫簡介</a></li>
+                <!-- <li><a  class="sub-nav-link dont-be-selected" href="/aboutNTCA">公會簡介</a></li> -->
+                <li><a class="sub-nav-link dont-be-selected" href="/memberList">歷屆名單</a></li>
+                <li><a class="sub-nav-link dont-be-selected" href="/studentIntro">組織架構</a></li>
+            </ul>
+            <!--     <ul class="small-link-nav">
+                <li><a class="sub-nav-small-link" href="/studentIntro">基本組織架構</a></li>
+                <li><a class="sub-nav-small-link" href="/projectIntro">專案組織架構</a></li>
+            </ul> -->
+        </div>
+
+
+        <div style="display: none;" class="sub-nav dobule-sub-nav sub-nav-plan">
+            <ul class="link-nav">
+                <a href="/trainingProgram" class="sub-nav-link back" style="color: white;">
+                    <span> &lt; </span>
+                    <img src="" alt="">
+                    返回
+                </a>
+                <li><a class="sub-nav-link" href="/businessVisit">企業參訪</a></li>
+                <li><a class="sub-nav-small-link" href="/businessVisit#google">Google</a></li>
+                <li><a class="sub-nav-small-link" href="/businessVisit#ogilvy">ogilvy</a></li>
+
+            </ul>
+            <!-- <li><a class="sub-nav-link" href="/businessVisit">企業參訪</a></li>
+                <li><a class="sub-nav-link" href="/businessVisit">企業參訪</a></li>
+                <li><a class="sub-nav-link" href="/businessVisit">企業參訪</a></li>  -->
+
+            <ul class="small-link-nav">
+                <!-- <li><a class="sub-nav-small-link" href="/businessVisit#shopee">蝦皮企業</a></li>
+                    <li><a class="sub-nav-small-link" href="/businessVisit#getac">神基科技</a></li>
+                    <li><a class="sub-nav-small-link" href="/businessVisit#microsoft">微軟</a></li>
+                    <li><a class="sub-nav-small-link" href="/businessVisit#google">Google</a></li> -->
+            </ul>
+        </div>
+
+        <div style="display: none;" class="sub-nav dobule-sub-nav sub-nav-plan">
+
+            <ul class="link-nav">
+                <a href="/trainingProgram" class="sub-nav-link back" style="color: white;">
+                    <span> &lt; </span>
+                    <img src="" alt="">
+                    返回
+                </a>
+                <li><a class="sub-nav-small-link" href="/tuv">TUV</a></li>
+                <li><a class="sub-nav-small-link" href="/careers">職涯</a></li>
+                <li><a class="sub-nav-small-link" href="/new">招生</a></li>
+                <!-- <li><a class="sub-nav-link active" href="/tuv">三大專案</a></li> -->
+            </ul>
+            <ul class="small-link-nav">
+                <!-- 時代的眼淚  第18屆只剩三個專案 -->
+                <!-- <li><a class="sub-nav-small-link" href="/tuv">TUV</a></li> -->
+                <!-- <li><a class="sub-nav-small-link" href="/spring">春酒</a></li>  -->
+                <!-- <li><a class="sub-nav-small-link" href="/careers">職涯</a></li> -->
+                <!-- <li><a class="sub-nav-small-link" href="/new">招生</a></li> -->
+                <!-- <li><a class="sub-nav-small-link" href="/overseaVisit">海參</a></li>  -->
+                <!-- <li><a class="sub-nav-small-link" href="/end">結業</a></li> -->
+            </ul>
+        </div>
+
+
+        <script>
+            let now_loction_path = document.location.pathname;
+            if (now_loction_path.includes('/courseInfo')) now_loction_path = '/courseInfo';
+            $(`.sub-nav a[href='${now_loction_path}']:not('.dont-be-selected')`)
+                .addClass('active')
+                .closest(".sub-nav").show();
+        </script>
+        <style>
+        </style>
+
+        <!-- <div class="main-title-div">
+            <div class="line-and-circle">
+              <div class="line"></div>
+              <div class="circle"></div>
+            </div>
+            <h1>TUV專案</h1>
+            <h2 class="sub-title double-line">「探索自身與生活中的各種可能性，藉由團隊協作將價值最大化」</h2>
+          </div> -->
+        <div class="main-titles clearfix">
+            <div style="display: none;"></div>
+            <div style="display: none;"></div>
+            <div style="display: none;"></div>
+            <div style="margin-left: 0;">TUV專案</div>
+            <h2>「不把手弄髒，怎麼知道一群人的力量可以多強大？」</h2>
+        </div>
+        <div class="six-project-container">
+            <h3>專案宗旨</h3>
+            <div class="content">
+                <p>
+                    專案全名 — Top Up the Value <br>
+                    各小組透過觀察生活周遭及社會現象，從生活中感觸最深的社會議題找出待解決的問題。 <br>
+                    在有限的時間與資源下，各組的夥伴齊心透過社會創新的方式，
+                    突破舊有思維，融入資訊、科技、人脈，並結合現有的資源，
+                    不僅僅是從零到一，而是從一到一百，
+                    設計出一個可行的解決方案，
+                    實際執行並推廣其蘊含的價值理念。<br>
+                    ※18屆此專案將從解決社會議題延伸調為解決企業問題※
+                </p>
+            </div>
+            <h3>專案內容</h3>
+            <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                <!-- Carousel indicators -->
+                <ol class="carousel-indicators">
+                    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#myCarousel" data-slide-to="1"></li>
+                    <li data-target="#myCarousel" data-slide-to="2"></li>
+                    <li data-target="#myCarousel" data-slide-to="3"></li>
+                    <li data-target="#myCarousel" data-slide-to="4"></li>
+                    <li data-target="#myCarousel" data-slide-to="5"></li>
+                </ol>
+                <!-- Wrapper for carousel items -->
+                <div class="carousel-inner">
+                    <div class="item  active">
+                        <img src="/images/tuv/sixproject-tuv0.jpeg" alt="Sixth Slide">
+                    </div>
+                    <div class="item">
+                        <img src="/images/tuv/sixproject-tuv1.jpeg" alt="First Slide">
+                    </div>
+                    <div class="item">
+                        <img src="/images/tuv/sixproject-tuv2.jpeg" alt="Second Slide">
+                    </div>
+                    <div class="item">
+                        <img src="/images/tuv/sixproject-tuv3.jpeg" alt="Third Slide">
+                    </div>
+                    <div class="item">
+                        <img src="/images/tuv/sixproject-tuv4.jpeg" alt="Fourth Slide">
+                    </div>
+                    <div class="item">
+                        <img src="/images/tuv/sixproject-tuv5.jpeg" alt="Fifth Slide">
+                    </div>
+
+                </div>
+                <!-- Carousel controls -->
+                <a class="carousel-control left" href="#myCarousel" data-slide="prev">
+                    <span class="glyphicon glyphicon-chevron-left"></span>
+                </a>
+                <a class="carousel-control right" href="#myCarousel" data-slide="next">
+                    <span class="glyphicon glyphicon-chevron-right"></span>
+                </a>
+            </div>
+
+
+            <h3>成果展現</h3>
+            <div class="text-xs-center">
+
+                <button id="first_button" class="btn-lg btn-default"
+                    style="padding-left: 1vw; padding-right: 1vw; border: solid 1px; font-size: 15px; margin-bottom: 5vh;">戀愛軍情局</button>
+
+                <button id="second_button" class="btn-lg btn-default"
+                    style="padding-left: 1vw; padding-right: 1vw; border: solid 1px; margin-left: 4vh;  font-size: 15px; margin-bottom: 5vh;">談心說愛</button>
+
+                <button id="third_button" class="btn-lg btn-default"
+                    style="padding-left: 1vw; padding-right: 1vw; border: solid 1px; margin-left: 4vh;   font-size: 15px; margin-bottom: 5vh;">新聞標題，你太誇張了喔！</button>
+
+                <button id="forth_button" class="btn-lg btn-default"
+                    style="padding-left: 1vw; padding-right: 1vw; border: solid 1px; margin-left: 4vh;   font-size: 15px; margin-bottom: 5vh;">眾獨</button>
+
+                <button id="fifth_button" class="btn-lg btn-default"
+                    style="padding-left: 1vw; padding-right: 1vw; border: solid 1px; margin-left: 4vh;   font-size: 15px; margin-bottom: 5vh;">傾盆大語</button>
+            </div>
+            <div class="row" id="first_group">
+                <h3 class="no-border">
+                    | 戀愛軍情局
+                </h3>
+                <img src="/images/tuv/sixproject-tuv1-1.png" alt="sixproject-tuv1-1.jpgnpm ">
+                <h3 class="no-border">
+                    專案介紹
+                </h3>
+                <div class="content">
+                    在大學三大必修之愛情中，我們時常因為缺乏自信而無法跨出第一步，如此的沒自信可能會影響到其他生活層面上，因此我們希望能為現今在愛情上缺乏自信的大學生們做些什麼。我們藉由聊天機器人的主動推播功能，分享有意義的文章幫助建立信心，並透過被動回復吸引目標受眾，提升使用率，同時透過網路社群平台擴散以及KOL合作進行推廣，達成我們的專案目標，為大學生提升信心的目的。
+                </div>
+                <h3 class="no-border">
+                    執行成果
+                </h3>
+                <div class="content">
+                    專案影片及懶人包上傳粉專僅一週內，我們就得到了以下迴響：<br>
+                    • 聊天機器人使用人數超過 6000 人<br>
+                    • 根據後測問卷有28.6%的使用者理解專案用意並能因次建立信心<br>
+                    • 根據後側問卷有42.9%的使用者在使用後了解該如何嘗試或行動<br>
+                    • 轉載文章連結平均點擊率為570.6次<br>
+                    • 平均每個使用者傳送了25.47則訊息<br>
+                </div>
+            </div>
+            <div class="row" id="second_group" style="display: none;">
+                <h3 class="no-border">
+                    | 談心說愛
+                </h3>
+                <img src="/images/tuv/sixproject-tuv2-1.png" alt="sixproject-tuv1-1.jpgnpm ">
+                <h3 class="no-border">
+                    專案介紹
+                </h3>
+                <div class="content">
+                    近年台灣世代觀念分歧的問題日益嚴重，特別是親子間時常因溝通不良而發生爭吵，甚至語言攻擊，導致親情出現裂痕，使得彼此不在願意花時間去傾聽與了解。本組希望藉由溝通三步驟——「溝通停看聽」，讓雙方願意了解與傾聽彼此的想法，進而練習解釋雙方的觀點，即使保有不同意見也能因同理對方而給予尊重。因此本組希望透過
+                    TUV 專案改善親子間的距離與衝突。 </div>
+                <h3 class="no-border">
+                    執行成果
+                </h3>
+                <div class="content">
+                    • 議題問卷：父母輩蒐集 31 份、子女輩蒐集 86 份<br>
+                    • 互動式影片：4,500+ 次的觀看人數<br>
+                    • 角色心境問卷：蒐集 31 份，轉換率為 23.13 %<br>
+                    • 外部資源推廣：與張忘形、媽媽經、陳志恆諮商心理師⋯⋯等，超過 8+ 位 KOL 的成功合作，推廣本組的影片與溝通口訣<br>
+                    • 實地街訪：60+ 份的質化回饋<br>
+                    • 論壇行銷：1,100+ 次點讚人數、60+ 次響應回饋<br>
+                </div>
+            </div>
+
+            <div class="row" id="third_group" style="display: none;">
+                <h3 class="no-border">
+                    | 新聞標題，你太誇張了喔！
+                </h3>
+                <img src="/images/tuv/sixproject-tuv3-1.png" alt="sixproject-tuv1-1.jpgnpm ">
+                <h3 class="no-border">
+                    專案介紹
+                </h3>
+                <div class="content">
+                    　　當媒體為了提高點擊率，以「誰下的標題誇大，誰就能獲得讀者青睞」為目標相互競爭時，就容易誤導沒有細看內文的閱聽人，造成錯誤的資訊流傳，也影響媒體作為社會第四權的公信力。<br><br>
+                    　　透過模擬及實驗大學生在遇到誘餌式標題時，所做的反應與帶來的影響，讓受眾清楚意識到問題的嚴重性，並配合理念宣導、議題看板及紀念品的露出，加深受眾對核心理念「News hook, think
+                    before click. 」的印象，期許大學生在每次點擊標題前花三秒多思考一下。
+
+                </div>
+                <h3 class="no-border">
+                    執行成果
+                </h3>
+                <div class="content">
+                    • 社會實驗：<br>
+                    &emsp; • 活動總參與人數 72 人。<br>
+                    &emsp; • 這次的實驗中，高達 89% 的受訪者同意誘餌式標題氾濫的嚴重性，也收穫了各校大學生的意見分享。<br>
+                    • 關鍵評論網：<br>
+                    &emsp; • 貼文連結：https://www.thenewslens.com/article/128715<br>
+                    &emsp; • 刊登結案文章至關鍵評論網，獲得當週點擊率 Top 3，共 225 人分享。<br>
+                    • Medium：6 篇文章，共 1831 人看過我們的文章。<br>
+                    • Dcard： 3 篇貼文，共 255 讚、34個留言。<br><br>
+                    我們是一群在意台灣媒體環境的大學生，非新聞相關科系出身的我們，也曾經認為自己身為閱聽人，除了對媒體失望，什麼也做不了，作為資訊接收者，我們根本無法控制生產端。<br>
+                    　　但，我們是可以選擇的，站在自己的位置上做到自己能做到的事，研究、訴說、書寫是我們傳遞資訊的方式。相信要讓這個世界變更好的話，並非每個人都得做出巨大的改變，只要你願意踏出第一步，一個人的聲音或許微弱，一群人的聲音卻不容忽視，請跟我們一起拒絕誘餌式標題！
+
+                </div>
+            </div>
+            <div class="row" id="forth_group" style="display: none;">
+                <h3 class="no-border">
+                    | 眾獨
+                </h3>
+                <img src="/images/tuv/sixproject-tuv4-1.png" alt="sixproject-tuv4-1.jpg">
+                <h3 class="no-border">
+                    專案介紹
+                </h3>
+                <div class="content">
+                    我們發現年輕人因接觸社交平台所引起的精神問題，已經是不能忽視的議題。
+                    其中，從眾效應正是其中的原因之一，於是我們希望能夠透過一系列的從眾情境介紹、心理知識懶人包以及互動活動，
+                    讓更多青年能夠對於生活中的從眾效應有所了解，建立正確的心態去面對。作法主軸有三，
+                    利用問卷分析洞察受眾共鳴情境、以數據導向產製內容，還有從 1 到 100 的流量社群 （ Dcard ） 借力，以外部力量做內容擴散。
+                </div>
+                <h3 class="no-border">
+                    執行成果
+                </h3>
+                <div class="content">
+                    • 第一階段操作社群策略──建立品牌認知度，塑造受眾共鳴<br>
+                    &emsp; • 觸及 2,534（達階段性目標之 51%）<br>
+                    &emsp; • 社群追蹤達 243（達階段性目標之 121%）<br>
+                    • 第二階段操作社群策略──建立品牌信任度，傳達理念<br>
+                    &emsp; • 互動率超過所設定之 5.8%目標（台灣平均社群互動率），情境手寫圖互動率分別為 9% 和 7%<br>
+                    &emsp; • 資訊懶人包互動率為 13%、14%、37%<br>
+                    • 主題社群總體成效<br>
+                    &emsp; • 追蹤數量最終為 269<br>
+                    &emsp; • 粉絲專頁總貼文觸及數量最終為 12,897<br><br>
+                    這次的專案讓我對社會議題的認識與實踐有更深的認識，雖然小組在專案執行中宛如風中殘燭，但最後還是開花結果，拿出不遜於其他組的成績！
+                </div>
+            </div>
+            <div class="row" id="fifth_group" style="display: none;">
+                <h3 class="no-border">
+                    | 傾盆大語
+                </h3>
+                <img src="/images/tuv/sixproject-tuv5-1.png" alt="sixproject-tuv1-1.jpgnpm ">
+                <h3 class="no-border">
+                    專案介紹
+                </h3>
+                <div class="content">
+                    專案初期我們與心輔機構、精神健康中心合作，實際訪談憂鬱症患者，並透過線上的懶人包及社群擴散傳遞憂鬱症相關知識；
+                    後期則結合自殺防治守門人：「一問、二應、三轉介」舉辦線下展覽，以互動性的電話亭讓參展者實際傾聽憂鬱症患者的自白，
+                    使體驗者在參展之後，能夠意識到傾聽的重要性並學習應對處理。
+                </div>
+                <h3 class="no-border">
+                    執行成果
+                </h3>
+                <div class="content">
+                    • 嘗試多種切點撰寫文章曝光於 Dacrd 並藉此導流 IG，在一個月內 Dcard 貼文獲得 2250 收藏數，IG 達到800粉絲數<br>
+                    • 舉辦展覽達 80 人參觀，平均每人停留時間達 5分鐘，並清楚了解「一問、二應、三轉介」的應用<br>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+
 
     <!-- Scripts -->
     <script src="./js/packages/jquery.min.js"></script>
