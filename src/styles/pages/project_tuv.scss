@@ -6672,7 +6672,7 @@ html {
   text-align: center;
 }
 .section-tuv .six-project-container h3 {
-  color: #00a0e8;
+  color: rgb(48,90,83);
 }
 .section-spring .six-project-container h3 {
   color: #8b4e9a;
@@ -6693,7 +6693,7 @@ html {
   border-style: solid;
   border-width: 1px;
   border-image-slice: 1;
-  border-image-source: linear-gradient(292deg, #ffffff, #00a0e8);
+//   border-image-source: linear-gradient(292deg, #ffffff, #00a0e8);
 }
 .section-spring .six-project-container h3 {
   border-style: solid;
@@ -6963,3 +6963,6 @@ html {
   }
 }
 
+body {
+    background:rgba(189,192,186,1);
+}

@@ -509,6 +509,10 @@ module.exports = {
             './src/scripts/pages/errorPage.js',
             './src/styles/pages/errorPage.scss'
         ],
+        medium: [
+            './src/scripts/pages/medium.js',
+            './src/styles/pages/medium.scss'
+        ],
     },
     // entry:entries,
     // output: {
@@ -551,6 +555,11 @@ module.exports = {
             template: './src/errorPage.html',
             filename: 'errorPage.html',
             chunks: ['errorPage']
+        }),
+        new HtmlWebpackPlugin({
+            template: './src/medium.html',
+            filename: 'medium.html',
+            chunks: ['medium']
         }),
     ],
     // plugins: html,
