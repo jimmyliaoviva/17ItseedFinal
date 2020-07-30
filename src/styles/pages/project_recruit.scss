@@ -105,6 +105,27 @@ body {
 
     .modal-footer {
         border-top: #ffffff;
+        display: flex;
+        // height: 50px;
+        justify-content: space-between;
+        padding: 5% 10%;
+        button {
+            border-radius: 5px;
+            border: none;
+            height: 100%;
+            font-size: 2em;
+            padding: 0.5em 1em;
+            margin-bottom: 0.5em;
+            &.btn-prev {
+                background: #dbdbdb 0% 0% no-repeat padding-box;
+                // margin-right: 0.5em;
+            }
+            &.btn-next {
+                color: white;
+                background: #143983 0% 0% no-repeat padding-box;
+                // margin-left: 0.5em;
+            }
+        }
     }
 
     .modal-body {
@@ -231,6 +252,9 @@ body {
                     font-size: 24px;
                 }
             }
+        }
+        .modal-footer {
+            font-size: 12px;
         }
     }
 }

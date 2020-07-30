@@ -2,10 +2,65 @@
 // 修改完之後可以將import刪掉
 // 注意！預設的樣式是以底圖為深色去做的，所以sidebar 皆為淺色。
 @import url(../sidebar.scss);
-
+@import "~bootstrap/scss/bootstrap";
 
 // 這是為了讓大家可以看到sidebar的顏色才將底色設為黑色
 // 可以自行調整
 body {
-    background-color:black ;
+    background-image: url(../../images/tb/tbBackground.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    
+    &::after {
+        position: absolute;
+        top: 0;
+        left: 0;
+        content: "";
+        // background:rgba(255, 255, 255, 0.2);
+        background: rgba(0, 0, 0, 0.6);
+        // opacity: 0.2;
+        z-index: 1;
+        width: 100%;
+        height: 100%;
+    }
+}
+.container {
+    position: relative;
+    padding-top: 70px;
+    z-index: 2;
+}
+.row {
+    .imgWrap {
+        // margin: 0;
+        padding: 0;
+        img {
+            width: 100%;
+            // margin: 0;
+        }
+    }
+
+
+    .text {
+        display: flex;
+        background: rgba(0, 0, 0, 0.5);
+        padding: 10px 10px 10px 0;
+        align-items: center;
+        // vertical-align: middle;
+        justify-content:flex-start;
+        img {
+            position: relative;
+            // bottom: -20px;
+            left: -2em;
+            // float: left;
+            width: 50%;
+            margin-right: 10px;
+        }
+    }
+    p {
+        color: white;
+        margin: 0;
+        font-size: 1em;
+    }
 }
