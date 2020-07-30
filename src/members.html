@@ -98,7 +98,9 @@
                             </div>
                             <div class="modal-footer">
                                 <div class="links">
-                                    <img src="./images/members/medium.png" alt="">
+                                    <% if (item.md) { %>
+                                    <a href="<%= item.md %>"><img src="./images/members/medium.png" alt=""></a>
+                                    <% } %>
                                     <% if (item.facebook) { %>
                                     <a href="<%= item.facebook %>"><img src="./images/members/facebook.png" alt=""></a>
                                     <%  } %>
