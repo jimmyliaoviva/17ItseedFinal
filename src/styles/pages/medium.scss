@@ -1,7 +1,11 @@
 @charset "UTF-8";
 @import url(../font-awesome.min.css);
 @import url("https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700");
+// 如果要修改sidebar 跟 header 的樣式，請將sidebar.scss 的內容複製過來再修改
+// 修改完之後可以將import刪掉
+// 注意！預設的樣式是以底圖為深色去做的，所以sidebar 皆為淺色。
 
+@import url(../sidebar.scss);
 /*
 	Hielo by TEMPLATED
 	templated.co @templatedco
@@ -4476,4 +4480,7 @@ body.is-mobile .banner > article {
     #footer {
         padding: 3rem 0 1rem 0;
     }
+}
+#menu {
+    background: rgb(112,124,116);
 }
