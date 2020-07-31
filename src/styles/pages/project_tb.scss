@@ -43,24 +43,71 @@ body {
 
 
     .text {
-        display: flex;
-        background: rgba(0, 0, 0, 0.5);
+        // display: flex;
+        background: rgba( 23,28,33, 0.7);
         padding: 10px 10px 10px 0;
-        align-items: center;
+        // align-items: center;
         // vertical-align: middle;
-        justify-content:flex-start;
+        // justify-content:flex-start;
         img {
             position: relative;
-            // bottom: -20px;
+            bottom: -20px;
             left: -2em;
-            // float: left;
+            float: left;
             width: 50%;
             margin-right: 10px;
         }
+        .textWrap {
+            display: flex;
+            align-items: center;
+            height: 100%;
+            position: relative;
+            left: -4em;
+        }
+        p {
+            color: white;
+            margin: 0;
+            font-size: 1em;
+            // position: relative;
+            left: -3em;
+        }
+        .phone {
+            display: none;
+        }
     }
-    p {
-        color: white;
-        margin: 0;
-        font-size: 1em;
-    }
+
 }
+ @media screen and (max-width:576px){
+     .container {
+         .row {
+             .imgWrap {
+                  padding: 0 10px;
+                img {
+
+                }
+             }
+             .text {
+                 display: block;
+                // padding: 0 10px;
+                .textWrap {
+                    display: none;
+                }
+                .phone {
+                    display: block;
+                }
+                .block {
+                    position: relative;
+                    width: 60%;
+                    height: 80%;
+                    float: left;
+                }
+                img {
+                    position: absolute;
+                    width: 75%;
+                    top: -70%;
+                }
+                 
+             }
+         }
+     }
+ }
