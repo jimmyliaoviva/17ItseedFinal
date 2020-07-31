@@ -545,6 +545,10 @@ module.exports = {
             './src/scripts/pages/medium.js',
             './src/styles/pages/medium.scss'
         ],
+        careerStory: [
+            './src/scripts/pages/careerStory.js',
+            './src/styles/pages/careerStory.scss'
+        ],
     },
     // entry:entries,
     // output: {
@@ -592,6 +596,11 @@ module.exports = {
             template: './src/medium.html',
             filename: 'medium.html',
             chunks: ['medium']
+        }),
+        new HtmlWebpackPlugin({
+            template: './src/careerStory.html',
+            filename: 'careerStory.html',
+            chunks: ['careerStory']
         }),
     ],
     // plugins: html,

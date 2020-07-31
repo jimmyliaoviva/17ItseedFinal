@@ -11,8 +11,15 @@ $('.presentationBtn').click(function () {
 
 $(document).ready(function() {
 
-    if(window.location.href.indexOf('#web') != -1) {
-      $('#web').modal('show');
+    if(window.location.href.indexOf('#learned') != -1) {
+      $('#learned').modal('show');
     }
+    if(window.location.href.indexOf('#presentation') != -1) {
+      $('#presentation').modal('show');
+    }
+    if(window.location.href.indexOf('#meme') != -1) {
+      $('#meme').modal('show');
+    }
+
   
   });
