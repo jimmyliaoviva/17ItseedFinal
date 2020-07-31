@@ -250,8 +250,8 @@ membersLinks =
             "name": "3-4 李新壹",
             "tag": [
                 "擇你所愛愛你所擇",
-                "those who do not remember the past are condemned to repeat it",
-                "Arbeit macht frei"
+                "Arbeit macht frei",
+                "those who do not remember the </br> past are condemned to repeat it",
             ],
             "future": "想要創業，針對現行的社區醫療體系以及長照系統提出改善的方向，能夠將社會醫療保健網深入到社區中的老人家中，分散教學醫院的龐大人流，更貼近的接觸到長照系統中的老人。",
             "learned": "",
