@@ -2,10 +2,259 @@
 // 修改完之後可以將import刪掉
 // 注意！預設的樣式是以底圖為深色去做的，所以sidebar 皆為淺色。
 @import url(../sidebar.scss);
-
+@import "~bootstrap/scss/bootstrap";
 
 // 這是為了讓大家可以看到sidebar的顏色才將底色設為黑色
 // 可以自行調整
+
 body {
-    background-color:black ;
+    background-color: #142f6d;
+    color: #143983;
+    background-image: url("../../images/background.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: 25% 50%;
+    background-size: cover;
+    .content {
+        padding: 60px 2em 2em 2em;
+        font-size: 30px;
+        margin: 0;
+    }
+
+    .row h1 {
+        margin-top: 1em;
+        margin-bottom: 1em;
+        color: black;
+    }
+}
+@media screen and(max-width:576px ) {
+    body {
+        background-image: url("../../images/mobile_back.png");
+        background-position: 30% 50%;
+    }
+}
+/* title */
+
+/* 數字區塊 */
+.numberBlock {
+    // background-color: blue;
+    padding: 10px 10px 0 0;
+
+    .content {
+        cursor: pointer;
+        padding: 10% 0;
+        color: #142f6d;
+        border-radius: 10px;
+        background: #ffffff 0% 0% no-repeat padding-box;
+        box-shadow: 3px 3px 6px #00000029;
+        text-align: center;
+
+        p.number {
+            width: 100%;
+            padding: 0;
+            margin: 0;
+            font-size: 50px;
+        }
+
+        p.hashtag {
+            width: 100%;
+            font-size: 22px;
+        }
+    }
+}
+
+/* 太空人 */
+.right_half {
+    position: fixed;
+    z-index: -1;
+    img {
+        width: 60vw;
+        top: 60px;
+        right: 0px;
+        position: fixed;
+        z-index: -1;
+    }
+}
+
+@media screen and(max-width:576px) {
+    .right_half {
+        visibility: hidden;
+        position: fixed;
+        z-index: -1;
+        img {
+            width: 100vw;
+            top: 60px;
+            right: 0px;
+            position: fixed;
+            z-index: -1;
+        }
+    }
+}
+
+/* 跳出視窗 */
+.modal {
+    .modal-header {
+        border-bottom: #ffffff;
+        .container {
+            padding: 0 10%;
+        }
+        .title {
+            font-size: 30px;
+        }
+    }
+
+    .modal-footer {
+        border-top: #ffffff;
+        display: flex;
+        // height: 50px;
+        justify-content: space-between;
+        padding: 5% 10%;
+        button {
+            border-radius: 5px;
+            border: none;
+            height: 100%;
+            font-size: 2em;
+            padding: 0.5em 1em;
+            margin-bottom: 0.5em;
+            &.btn-prev {
+                background: #dbdbdb 0% 0% no-repeat padding-box;
+                // margin-right: 0.5em;
+            }
+            &.btn-next {
+                color: white;
+                background: #143983 0% 0% no-repeat padding-box;
+                // margin-left: 0.5em;
+            }
+        }
+    }
+
+    .modal-body {
+        .container {
+            padding: 0 5%;
+            hr {
+                border: 2px solid #707070;
+            }
+            .title {
+                font-size: 30px;
+            }
+            .comic {
+                width: 100%;
+            }
+            .hashtag {
+                margin-bottom: 30px;
+            }
+        }
+    }
+
+    .row {
+        margin-bottom: 20px;
+        width: 100%;
+        margin-right: 0;
+        margin-left: 0;
+        .circleImg {
+            height: 56px;
+            width: 56px;
+            overflow: hidden;
+            border-radius: 999em;
+            img {
+                width: 56px;
+            }
+        }
+    }
+
+    .left {
+        img {
+            // width: 3.5em;
+        }
+
+        .chat {
+            position: relative;
+            background: #efefef 0% 0% no-repeat padding-box;
+            border-radius: 26px;
+            color: black;
+            margin-left: 10px;
+            padding: 1em;
+
+            &::after {
+                position: absolute;
+                content: " ";
+                bottom: -15px;
+                left: -15px;
+                border-width: 15px;
+                border-color: transparent;
+                border-style: solid;
+                border-top-color: #efefef;
+                transform: rotate(45deg);
+            }
+
+            p {
+                margin: 0;
+            }
+        }
+    }
+
+    .right {
+        display: flex;
+        justify-content: flex-end;
+        img {
+            width: 3.5em;
+        }
+
+        .chat {
+            position: relative;
+            background: #c3f69d 0% 0% no-repeat padding-box;
+            border-radius: 26px;
+            // height: 30px;
+            color: black;
+            margin-right: 10px;
+            padding: 1em;
+            float: right;
+
+            &::after {
+                position: absolute;
+                content: " ";
+                bottom: -15px;
+                right: -15px;
+                border-width: 15px;
+                border-color: transparent;
+                border-style: solid;
+                border-top-color: #c3f69d;
+                transform: rotate(315deg);
+            }
+
+            p {
+                margin: 0;
+            }
+        }
+    }
+    .center {
+        text-align: center;
+        display: flex;
+        justify-content: space-around;
+        color: #605d5e;
+        .leave {
+            position: relative;
+            background: #efefef 0% 0% no-repeat padding-box;
+            border-radius: 15px;
+            padding: 1em;
+            p {
+                margin: 0;
+            }
+        }
+    }
+}
+
+@media screen and(max-width:576px) {
+    .modal {
+        .modal-body {
+            .container {
+                .title {
+                    font-size: 24px;
+                }
+            }
+        }
+        .modal-footer {
+            font-size: 12px;
+        }
+    }
 }
