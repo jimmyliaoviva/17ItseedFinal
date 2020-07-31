@@ -7,31 +7,37 @@
 // 這是為了讓大家可以看到sidebar的顏色才將底色設為黑色
 // 可以自行調整
 body {
-    background-image: url(../../images/tb/tbBackground.png);
+    background-image: url(../../images/tb/tbBackground.jpg);
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center;
     background-size: cover;
     
-    &::after {
-        position: absolute;
-        top: 0;
-        left: 0;
-        content: "";
-        // background:rgba(255, 255, 255, 0.2);
-        background: rgba(0, 0, 0, 0.6);
-        // opacity: 0.2;
-        z-index: 1;
-        width: 100%;
-        height: 100%;
+    // &::after {
+    //     position: absolute;
+    //     top: 0;
+    //     left: 0;
+    //     content: "";
+    //     // background:rgba(255, 255, 255, 0.2);
+    //     background: rgba(0, 0, 0, 0.6);
+    //     // opacity: 0.2;
+    //     z-index: 1;
+    //     width: 100%;
+    //     height: 100%;
+    // }
+    h2 {
+        color:white;
+        margin-bottom:1em ;
     }
 }
 .container {
     position: relative;
     padding-top: 70px;
     z-index: 2;
+    
 }
 .row {
+    padding-bottom: 2em;
     .imgWrap {
         // margin: 0;
         padding: 0;
@@ -44,23 +50,26 @@ body {
 
     .text {
         display: flex;
-        background: rgba(0, 0, 0, 0.5);
-        padding: 10px 10px 10px 0;
+        background: rgba( 23,28,33, 0.7);
+        padding:  3em;
         align-items: center;
-        // vertical-align: middle;
-        justify-content:flex-start;
-        img {
-            position: relative;
-            // bottom: -20px;
-            left: -2em;
-            // float: left;
-            width: 50%;
-            margin-right: 10px;
+        // text-align: center;
+        &.even {
+            background: rgba( 26,33,23,0.7);
+        }
+
+        p {
+            color: white;
+            margin: 0;
+            font-size: 1em;
+            
+            // position: relative;
+            // left: -3em;
+            // line-height;
+        }
+        .phone {
+            display: none;
         }
     }
-    p {
-        color: white;
-        margin: 0;
-        font-size: 1em;
-    }
+
 }
