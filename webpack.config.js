@@ -501,11 +501,56 @@ membersLinks =
         }
     ]
 
-membersData = [
-    {
+careerStory =
+    [
+        {
+            "title": "一起實驗」驗出行銷DNA | 蔡珮歆",
+            "content": "實習的今天回頭看，驚覺這些軟硬實力都沒有學到很專業，對於職涯銜接卻帶來意想不到的感動，真心感動路沒有白走",
+            "link": "https://medium.com/@judytsai/%E4%B8%80%E8%B5%B7%E5%AF%A6%E9%A9%97-%E9%A9%97%E5%87%BA%E8%A1%8C%E9%8A%B7-dna-fe0522db576c"
+        },
+        {
+            "title": "網路前端三部曲 | 廖顥軒",
+            "content": "藉由這次專案，我可以一窺山頂的樣貌藉由社會上的「軟體工程師」有一個比較務實的想像，不會像之前看著104的職缺什麼都不懂",
+            "link": "https://link.medium.com/WXGItuvFL6"
+        },
+        {
+            "title": "邊寫程式邊 murmur | 蔡佩珊",
+            "content": "有很多事真的都要親自走一遍才知道哪裡會有問題，光用想的根本沒用，真的要多練習，而且要用腦，思考為什麼要這樣，才能讓程式寫得更有效率，優化得更好",
+            "link": "https://medium.com/@tinat6608/%E9%82%8A%E5%AF%AB%E7%A8%8B%E5%BC%8F%E9%82%8A-murmur-%E7%95%AA%E8%8C%84%E9%90%98-a56f10531fa1"
+        },
+        {
+            "title": "踏出成為工程師的第一步－資種甘苦談 | 謝秉峻",
+            "content": "收穫很大的一部分是「心態」，從前我覺得只要東西有寫出來，跑得動，就可以交件，但真正體驗工程師生活之後，才發現沒那麼簡單",
+            "link": "https://medium.com/@zxcx98738/%E8%B8%8F%E5%87%BA%E6%88%90%E7%82%BA%E5%B7%A5%E7%A8%8B%E5%B8%AB%E7%9A%84%E7%AC%AC%E4%B8%80%E6%AD%A5-cba35e58fd7e"
+        },
+        {
+            "title": "PM 週記 | 孫睿廷",
+            "content": "提案的過程發現，我們在提案時，應該要把握三個原則。而提一個功能更動時，應該要清楚定義、釐清需求、知會邏輯。而不只是簡單地提出一個名詞和秀出個介面",
+            "link": "https://medium.com/@tomy398398/pm-%E9%80%B1%E8%A8%98-%E4%B8%80-333-%E4%B8%89%E5%80%8B%E5%8E%9F%E5%9B%A0-%E4%B8%89%E5%80%8B%E6%8F%90%E6%A1%88-%E4%B8%89%E5%80%8B%E4%B8%8D%E6%B8%85-25f8c8fd2ca"
+        },
+        {
+            "title": "資訊人的另一條路  -  顧問 | 許立璇",
+            "content": "學長分享了許多自己的故事，不僅談及我的職涯規劃，也引導我一步步釐清職涯上的問題與解方，讓我不只對資訊服務產業的顧問有更多認識，也更瞭解自己",
+            "link": "https://medium.com/@lichsu860625/bfaa1fa01e44"
+        },
+        {
+            "title": "職涯引路人－今晚與學姐有約，從人資談到人生 | 黃文萱",
+            "content": "每個人都有屬於自己的時區，現在唯一要做的就是把握機會、做好眼前的事，在未來的某一天會有「啊！原來我喜歡這個」的感覺",
+            "link": "https://medium.com/p/354c946e87f1"
+        },
+        {
+            "title": "職涯引路人－從軟體工程師邁向人生理想，給迷茫中的我們建議 | 劉竹",
+            "content": "訪談過程中了解到學長過去曾做的選擇，無形之中也影響到未來的自己。我也學到人生中的選擇沒有所謂的對錯，只能透過不斷的嘗試，才能找到自己所想要的是什麼",
+            "link": "https://medium.com/@zliu3922/adfb2aed31d3"
+        },
+        {
+            "title": "走跳職場初體驗－類神經網路 | 周郁芳",
+            "content": "在一片慌亂與迷惘中，傾聽自己內在的權威來到了類神經網路。深刻體會到「驅動團隊動力」的意涵！期望往後也能發揮自己的能量，儘管微弱，也希望能溫暖到陽光照不到的角落",
+            "link": "https://medium.com/fanny-chou/%E8%B5%B0%E8%B7%B3%E8%81%B7%E5%A0%B4%E5%88%9D%E9%AB%94%E9%A9%97-%E9%A1%9E%E7%A5%9E%E7%B6%93%E7%B6%B2%E8%B7%AF-part-1-%E5%BF%83%E6%85%8B%E7%AF%87-5d4104ed3753"
+        },
 
-    }
-]
+
+    ]
 
 
 
@@ -600,7 +645,8 @@ module.exports = {
         new HtmlWebpackPlugin({
             template: './src/careerStory.html',
             filename: 'careerStory.html',
-            chunks: ['careerStory']
+            chunks: ['careerStory'],
+            story :careerStory,
         }),
     ],
     // plugins: html,

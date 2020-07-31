@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="zh-hant-tw">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>職涯專案</title>
+</head>
+
+<body>
+    <!-- Header -->
+    <header id="header">
+        <div class="logo"><a href="index.html">Road Trip <span></span></a></div>
+        <a href="#menu"><span>Menu</span></a>
+    </header>
+
+    <!-- Nav -->
+    <nav id="menu">
+        <ul class="links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="project_tuv.html">TUV</a></li>
+            <li><a href="project_tb.html">TB</a></li>
+            <li><a href="project_career.html">職涯專案</a></li>
+            <li><a href="project_recruit.html">招生專案</a></li>
+            <li><a href="members.html">資種 17 </a></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <div class="row titleWrap">
+            <h2 class="title">心得撰寫
+                <img src="./images/members/1.png" alt="">
+            </h2>
+            
+            <p class="">「看看大家職涯體驗過程有什麼收穫呢？」</p>
+
+        </div>
+        
+        <div class="row">
+            <% htmlWebpackPlugin.options.story.forEach(item => { %>
+            <div class="col-12 col-sm-4 col-md-4 col-lg-4 col-xl-4 blockWrap">
+                <div class="contentWrap">
+                    <p><%= item.title %></p>
+                    <div class="content">
+                        <p><%= item.content %></p>
+                    </div>
+                    <a href="<%= item.link %>" target="_blank"><button>觀看完整心得</button></a>
+                </div>
+            </div>
+            <% }) %>
+            <div class="col-12 col-sm-4 col-md-4 col-lg-4 col-xl-4 blockWrap">
+                <div class="contentWrap">
+                    <p>踏出成為工程師的第一步</p>
+                    <div class="content">
+                        <p>「收穫很大的一部分是「心態」，從前我覺得只要東西有寫出來，跑得動，就可以交件，但真正體驗工程師生活之後，才發現沒那麼簡單。」</p>
+                    </div>
+                    <button>觀看完整心得</button>
+                </div>
+            </div>
+            <div class="col-12 col-sm-4 col-md-4 col-lg-4 col-xl-4 blockWrap">
+                <div class="contentWrap">
+                    <p>踏出成為工程師的第一步</p>
+                    <div class="content">
+                        <p>「收穫很大的一部分是「心態」，從前我覺得只要東西有寫出來，跑得動，就可以交件，但真正體驗工程師生活之後，才發現沒那麼簡單。」</p>
+                    </div>
+                    <button>觀看完整心得</button>
+                </div>
+            </div>
+            <div class="col-12 col-sm-4 col-md-4 col-lg-4 col-xl-4"></div>
+            <div class="col-12 col-sm-4 col-md-4 col-lg-4 col-xl-4"></div>
+        </div>
+
+    </div>
+
+
+    <!-- Scripts -->
+    <script src="./js/packages/jquery.min.js"></script>
+    <script src="/js/packages/jquery.scrolly.min.js"></script>
+    <script src="/js/packages/jquery.scrollex.min.js"></script>
+    <script src="/js/packages/skel.min.js"></script>
+    <script src="/js/packages/util.js"></script>
+    <script src="/js/packages/main.js"></script>
+</body>
+
+</html>
