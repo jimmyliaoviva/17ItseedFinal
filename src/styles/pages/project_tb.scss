@@ -25,13 +25,19 @@ body {
         width: 100%;
         height: 100%;
     }
+    h2 {
+        color:white;
+        margin-bottom:1em ;
+    }
 }
 .container {
     position: relative;
     padding-top: 70px;
     z-index: 2;
+    
 }
 .row {
+    padding-bottom: 2em;
     .imgWrap {
         // margin: 0;
         padding: 0;
@@ -43,33 +49,23 @@ body {
 
 
     .text {
-        // display: flex;
+        display: flex;
         background: rgba( 23,28,33, 0.7);
-        padding: 10px 10px 10px 0;
-        // align-items: center;
-        // vertical-align: middle;
-        // justify-content:flex-start;
-        img {
-            position: relative;
-            bottom: -20px;
-            left: -2em;
-            float: left;
-            width: 50%;
-            margin-right: 10px;
+        padding:  3em;
+        align-items: center;
+        // text-align: center;
+        &.even {
+            background: rgba( 26,33,23,0.7);
         }
-        .textWrap {
-            display: flex;
-            align-items: center;
-            height: 100%;
-            position: relative;
-            left: -4em;
-        }
+
         p {
             color: white;
             margin: 0;
             font-size: 1em;
+            
             // position: relative;
-            left: -3em;
+            // left: -3em;
+            // line-height;
         }
         .phone {
             display: none;
@@ -77,37 +73,3 @@ body {
     }
 
 }
- @media screen and (max-width:576px){
-     .container {
-         .row {
-             .imgWrap {
-                  padding: 0 10px;
-                img {
-
-                }
-             }
-             .text {
-                 display: block;
-                // padding: 0 10px;
-                .textWrap {
-                    display: none;
-                }
-                .phone {
-                    display: block;
-                }
-                .block {
-                    position: relative;
-                    width: 60%;
-                    height: 80%;
-                    float: left;
-                }
-                img {
-                    position: absolute;
-                    width: 75%;
-                    top: -70%;
-                }
-                 
-             }
-         }
-     }
- }
